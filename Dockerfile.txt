@@ -1,0 +1,13 @@
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get install -y python3-pip 
+
+RUN python3 -m pip install --upgrade pip
+
+RUN python3 -m pip install --no-cache-dir pandas numpy seaborn matplotlib scikit-learn scipy
+
+RUN mkdir -p /home/doc-bd-a1/
+
+COPY ./diabetes.csv /home/doc-bd-a1/diabetes.csv
+
+CMD ["bash"]

@@ -1,0 +1,2 @@
+This is cluster 1 and it contains : 181
+This is cluster 2 and it contains : 151
